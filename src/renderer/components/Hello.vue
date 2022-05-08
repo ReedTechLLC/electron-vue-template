@@ -4,8 +4,9 @@ const msg = 'Electron + Vue3 template'
 
 <template>
 	<div id="hello">
-		<img src="http://vuejs.org/images/logo.png" />
+		<img src="images/vue-logo.png" />
 		<h1>{{ msg }}</h1>
+		<p>This fork adds ESLint, Prettier, and Tailwind.</p>
 		<h2>Essential Links</h2>
 		<ul>
 			<li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
