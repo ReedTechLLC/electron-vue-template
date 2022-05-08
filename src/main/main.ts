@@ -1,10 +1,16 @@
-import { app, BrowserWindow, ipcMain } from 'electron'
+import { BrowserWindow, app, ipcMain } from 'electron'
+
 import { join } from 'path'
+
+const iconPath = join(__dirname, 'static', 'vue-icon.png')
 
 function createWindow() {
 	const mainWindow = new BrowserWindow({
 		width: 800,
-		height: 600,
+		height: 800,
+		resizable: false,
+		icon: iconPath,
+		title: 'Electron Vue App',
 		webPreferences: {
 			preload: join(__dirname, 'preload.js'),
 			nodeIntegration: false,
