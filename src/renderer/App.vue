@@ -2,6 +2,8 @@
 import Hello from './components/Hello.vue'
 import { ipcRenderer } from './electron'
 
+import './app.css'
+
 ipcRenderer.send('message', 'Hello from App.vue!')
 </script>
 

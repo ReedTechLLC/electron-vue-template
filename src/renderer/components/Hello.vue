@@ -3,10 +3,12 @@ const msg = 'Electron + Vue3 template'
 </script>
 
 <template>
-	<div id="hello">
-		<img src="images/vue-logo.png" />
-		<h1>{{ msg }}</h1>
-		<p>This fork adds ESLint, Prettier, and Tailwind.</p>
+	<div class="flex flex-col w-2/3 mx-auto mt-10 text-center">
+		<img class="w-2/3 mx-auto" src="images/vue-logo.png" />
+		<h1 class="text-4xl">{{ msg }}</h1>
+		<p class="text-slate-500">
+			This fork adds ESLint, Prettier, and Tailwind.
+		</p>
 		<h2>Essential Links</h2>
 		<ul>
 			<li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -42,19 +44,22 @@ const msg = 'Electron + Vue3 template'
 	</div>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 #hello {
+	@apply text-center;
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
 	color: #2c3e50;
 	margin-top: 60px;
 }
 
-h1,
+h1 {
+	@apply text-3xl font-bold;
+}
+
 h2 {
-	font-weight: normal;
+	@apply text-2xl mt-10 font-normal;
 }
 
 ul {
@@ -63,8 +68,7 @@ ul {
 }
 
 li {
-	display: inline-block;
-	margin: 0 10px;
+	@apply mx-2.5 inline-block;
 }
 
 a {

@@ -4,6 +4,11 @@
 	"parserOptions": {
 		"parser": "@typescript-eslint/parser"
 	},
+	"env": {
+		"browser": true,
+		"amd": true,
+		"node": true
+	},
 	"extends": [
 		"plugin:vue/strongly-recommended",
 		"eslint:recommended",

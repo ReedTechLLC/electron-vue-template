@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const Path = require('path')
 const vuePlugin = require('@vitejs/plugin-vue')
 
