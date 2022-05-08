@@ -4,8 +4,9 @@
 
 A simple starter template for a **Vue3** + **Electron** TypeScript based application, including **ViteJS** and **Electron Builder**.
 
-_This fork adds ESLint, Prettier, and Tailwind3._
-_Tabs are used this fork but that can easily be changed via the various config files and then run `npm run format`_
+This fork adds ESLint, Prettier, and Tailwind3.
+
+_Tabs are used this fork. That can easily be changed via config files and fixed by running `npm run format`_
 
 </div>
 
