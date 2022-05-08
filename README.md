@@ -4,6 +4,9 @@
 
 A simple starter template for a **Vue3** + **Electron** TypeScript based application, including **ViteJS** and **Electron Builder**.
 
+_This fork adds ESLint, Prettier, and Tailwind3._
+_Tabs are used this fork but that can easily be changed via the various config files and then run `npm run format`_
+
 </div>
 
 ## About
@@ -35,6 +38,20 @@ npm run dev
 ## Getting Started
 
 Change the window title in `src/renderer/index.html` file.
+
+## Formatting
+
+Use the following commands to run ESLint or Prettier.
+
+The included VSCode `settings.json` file will format the source file on save.
+
+```bash
+npm run lint 		# Dry run of the Linter.
+npm run lint:fix 	# Runs the Linter and fixes errors where able.
+npm run prettier 	# Dry run of Prettier.
+npm run prettier:fix	# Runs Prettier and fixes files in place.
+npm run format 		# Runs both Linter and Prettier fixing issues where able.
+```
 
 ## Additional Commands
 
